@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  width: 550px;
+  height: 729px;
+  font-family: "Inter", sans-serif;
+  margin: 10px auto;
+}
+
+#top-sec {
+  height: 285px;
+  background-color: #6943FF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#top-sec #title {
+  color: white;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+}
+#top-sec #convert-btn {
+  background-color: #FFFFFF;
+  width: 117px;
+  height: 42px;
+  margin-top: 27px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0509803922);
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3D3D3D;
+  padding: 9px 27px;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#input-num {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 83px;
+  width: 117px;
+  font-size: 58px;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 800;
+  text-align: center;
+  line-height: 24.43px;
+}
+
+#bottom-sec {
+  height: 444px;
+  background-color: #F4F4F4;
+  padding: 38px 25px;
+}
+#bottom-sec .output-container {
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 500px;
+  height: 108px;
+  border-top-left-radius: 5px;
+}
+#bottom-sec .output-container .unit {
+  color: #5A537B;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 20px;
+}
+#bottom-sec .output-container .unit::after {
+  font-size: 14px;
+  color: #353535;
+  font-weight: 400;
+  line-height: 20px;
+}/*# sourceMappingURL=style.css.map */
