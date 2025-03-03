@@ -9,7 +9,7 @@
 <body>
     <div id="top-sec">
         <h1 id="title">Metric/Imperial Unit Conversion</h1>
-        <input type="number" id="input-num">
+        <input type="number" id="input-num" pattern="\d"  oninput="this.value = this.value.replace(/[^0-9]/g, '')" >
         <button id="convert-btn">Convert</button>
     </div>
     <div id="bottom-sec">
