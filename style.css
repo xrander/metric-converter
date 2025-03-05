@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  color-scheme: light dark;
+  --light-bg-color: #F4F4F4;
+  --dark-bg-color: #1F2937;
+  --light-text-color: #5A537B;
+  --dark-text-color: #CCC1FF;
+  --primary-color: #6943FF;
+  --button-bg-color: #FFFFFF;
+  --button-text-color: #3D3D3D;
+  --input-border-color: white;
+  --input-text-color: #FFFFFF;
+  --light-result-color: #353535;
+  --dark-result-color: #FFFFFF;
+}
+
 body {
   width: 550px;
   height: 729px;
@@ -8,11 +23,12 @@ body {
 
 #top-sec {
   height: 285px;
-  background-color: #6943FF;
+  background-color: var(--primary-color);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 0px solid var(--input-border-color);
 }
 #top-sec #title {
   color: white;
@@ -21,7 +37,7 @@ body {
   line-height: 38px;
 }
 #top-sec #convert-btn {
-  background-color: #FFFFFF;
+  background-color: var(--button-bg-color);
   width: 117px;
   height: 42px;
   margin-top: 27px;
@@ -29,7 +45,7 @@ body {
   border-radius: 5px;
   font-size: 16px;
   font-weight: 500;
-  color: #3D3D3D;
+  color: var(--button-text-color);
   padding: 9px 27px;
 }
 
@@ -39,12 +55,12 @@ input[type=number] {
 
 #input-num {
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid var(--input-border-color);
   border-radius: 5px;
   height: 83px;
   width: 117px;
   font-size: 58px;
-  color: #FFFFFF;
+  color: var(--input-text-color);
   text-align: center;
   font-weight: 800;
   text-align: center;
@@ -53,26 +69,47 @@ input[type=number] {
 
 #bottom-sec {
   height: 444px;
-  background-color: #F4F4F4;
+  background-color: var(--light-bg-color);
   padding: 38px 25px;
+  border: 1px solid var(--input-border-color);
+}
+@media (prefers-color-scheme: dark) {
+  #bottom-sec {
+    background-color: var(--dark-bg-color);
+  }
 }
 #bottom-sec .output-container {
-  background-color: #FFFFFF;
+  background-color: var(--light-bg-color);
   text-align: center;
   width: 500px;
   height: 108px;
   border-top-left-radius: 5px;
 }
+@media (prefers-color-scheme: dark) {
+  #bottom-sec .output-container {
+    background-color: var(--dark-bg-color);
+  }
+}
 #bottom-sec .output-container .unit {
-  color: #5A537B;
+  color: var(--light-text-color);
   font-weight: 600;
   font-size: 20px;
   line-height: 20px;
   padding-top: 20px;
 }
-#bottom-sec .output-container .unit::after {
+@media (prefers-color-scheme: dark) {
+  #bottom-sec .output-container .unit {
+    color: var(--dark-text-color);
+  }
+}
+#bottom-sec .output-container .res {
   font-size: 14px;
-  color: #353535;
+  color: var(--light-unit-color);
   font-weight: 400;
   line-height: 20px;
+}
+@media (prefers-color-scheme: dark) {
+  #bottom-sec .output-container .res {
+    color: var(--dark-unit-color);
+  }
 }/*# sourceMappingURL=style.css.map */
